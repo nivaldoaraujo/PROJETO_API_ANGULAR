@@ -1,0 +1,64 @@
+<h1>Alunos Cadastrados</h1>
+
+<!-- 
+    <table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+
+    <tr>
+        <th>1</th>
+        <th>Nivaldo</th>
+        <th>18</th>
+    </tr>
+</table>
+ -->
+ <!-- 
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+
+    <tr *ngFor="let aluno of alunos">
+        <th>{{aluno.id}}</th>
+        <th>{{aluno.nome}}</th>
+        <th>{{aluno.idade}}</th>
+    </tr>
+</table>
+
+  -->
+  <hr>
+  <form >
+    <p>
+        Nome: <input type="text" name="name" [(ngModel)]="aluno.nome">
+    </p>
+    <p>
+        Idade: <input type="text" name="idade" [(ngModel)]="aluno.idade" >
+    </p>
+    <button type="button" (click)="cadastrar()" >Cadastrar</button>
+    <!-- Criara criar aluno.model.ts as variaveis alunos.component.ts -->
+  </form>
+  <hr>
+<h3>Lista de Alunos</h3>
+ <table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+
+    <tr *ngFor="let aluno of alunos">
+        <th>{{aluno.id}}</th>
+        <th>{{aluno.nome}}</th>
+        <th>{{aluno.idade}}</th>
+        <td>
+            <button (click)="atualizar(aluno.id)">Atualizar</button>
+            <button (click)="remover(aluno.id)">Remover</button>
+        </td>
+        
+    </tr>
+</table>

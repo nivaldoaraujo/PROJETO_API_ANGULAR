@@ -1,0 +1,39 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Hugo Caxias",
+      "idade": 34
+    },
+    {
+      "nome": "Nivaldo",
+      "idade": "20",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "nome": "Felipe fortinho",
+      "idade": 34
+    },
+    {
+      "nome": "algenos",
+      "idade": "65",
+      "id": 5
+    },
+    {
+      "id": 2,
+      "nome": "Rogério",
+      "idade": "25"
+    },
+    {
+      "nome": "Marcão",
+      "idade": "54",
+      "id": 6
+    },
+    {
+      "nome": "Carlos",
+      "idade": "21",
+      "id": 7
+    }
+  ]
+}
